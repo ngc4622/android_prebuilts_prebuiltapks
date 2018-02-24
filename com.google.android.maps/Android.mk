@@ -22,6 +22,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := 10-mapsapi.sh
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT)/system/addon.d
+LOCAL_MODULE_PATH := $(TARGET_OUT)/addon.d
 LOCAL_SRC_FILES := 10-mapsapi.sh
 include $(BUILD_PREBUILT)
