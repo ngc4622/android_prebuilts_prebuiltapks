@@ -16,3 +16,11 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
 LOCAL_SRC_FILES := permissions_org.fdroid.fdroid.privileged.xml
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := 80-fdroid.sh
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH :=  $(TARGET_OUT)/addon.d
+LOCAL_SRC_FILES := 80-fdroid.sh
+include $(BUILD_PREBUILT)
