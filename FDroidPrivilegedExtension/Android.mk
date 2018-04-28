@@ -11,7 +11,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := FDroidPrivilegedExtension
-LOCAL_SRC_FILES := FDroidPrivilegedExtension.apk
+LOCAL_SRC_FILES := org.fdroid.fdroid.privileged_2070.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -26,3 +26,4 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH :=  $(TARGET_OUT)/addon.d
 LOCAL_SRC_FILES := 80-fdroid.sh
 include $(BUILD_PREBUILT)
+
