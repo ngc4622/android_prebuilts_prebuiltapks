@@ -16,7 +16,11 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_OVERRIDES_PACKAGES := com.qualcomm.location
+
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
+    LOCAL_OVERRIDES_PACKAGES := com.qualcomm.location
+endif
+
 LOCAL_REQUIRED_MODULES := privapp-permissions-com.google.android.gms.xml
 include $(BUILD_PREBUILT)
 
