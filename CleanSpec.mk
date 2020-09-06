@@ -24,13 +24,6 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/priv-app/GmsCore/GmsCore.apk
 # GsfProxy
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/GsfProxy/GsfProxy.apk)
 # UnifiedNlp and location providers
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/priv-app/NetworkLocation/NetworkLocation.apk)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/MozillaNlpBackend/MozillaNlpBackend.apk)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/NominatimNlpBackend/NominatimNlpBackend.apk)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/NominatimGeocoderBackend/NominatimGeocoderBackend.apk)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/OpenBmapNlpBackend/OpenBmapNlpBackend.apk)
-
-
-##########################
-# EMail
-##########################
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/product/app/Email/Email.apk)
